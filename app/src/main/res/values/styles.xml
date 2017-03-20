@@ -6,6 +6,33 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/activity_animation</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="edit_view_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/auto_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/cjx_text_deep_color</item>
+        <item name="android:textColorHint">@color/cjx_text_secondary_color</item>
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <style name="submit_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:background">@drawable/main_corner_btn</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+        <item name="android:layout_margin">@dimen/auto_margin</item>
+        <item name="android:onClick">submitClick</item>
+    </style>
 </resources>
