@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#159ff9</color>
-    <color name="colorPrimaryDark">#177fce</color>
+    <color name="colorPrimary">#FA615B</color>
+    <color name="colorPrimaryDark">#FF2F36</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimaryYellow">#ffab00</color>
+    <color name="colorPrimaryYellowClick">#ff9803</color>
 
     <color name="shadow_white_color">#22000000</color>
+
+    <color name="bottom_tool_bg">#f8f8f8</color>
+    <!-- 提醒颜色 -->
+    <color name="notice_color">#f3242a</color>
+    <!-- 文字主色 -->
+    <color name="invalid_color">#b0b0b0</color>
 </resources>

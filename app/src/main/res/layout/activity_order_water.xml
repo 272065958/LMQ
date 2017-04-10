@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cjx_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view" />
+
+    <LinearLayout
+        android:id="@+id/product_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/water_shop"
+            layout="@layout/view_shop" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cjx_text_main_color"
+            android:textSize="@dimen/text_size_small"
+            android:padding="@dimen/auto_margin"
+            android:text="@string/order_water_hint"/>
+
+        <include
+            android:id="@+id/water_bucket"
+            android:visibility="gone"
+            layout="@layout/view_shop" />
+
+        <include
+            android:id="@+id/water_shop_line"
+            layout="@layout/divider_view"
+            android:visibility="gone"/>
+
+        <include
+            android:id="@+id/water_pump"
+            android:visibility="gone"
+            layout="@layout/view_shop" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:layout_height="@dimen/item_height"
+        layout="@layout/view_shop_buy" />
+
+    <include
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height">
+
+    <ImageView
+        android:id="@+id/shop_cart_icon"
+        android:layout_width="@dimen/item_height"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:onClick="buyClick"
+        android:padding="@dimen/bigger_margin"
+        android:src="@drawable/ic_shop" />
+
+    <TextView
+        android:id="@+id/shop_count"
+        android:layout_width="@dimen/fab_margin"
+        android:layout_height="@dimen/fab_margin"
+        android:layout_alignRight="@id/shop_cart_icon"
+        android:layout_marginTop="@dimen/block_line_height"
+        android:background="@drawable/notice_bg"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_more_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:layout_marginRight="@dimen/auto_margin"
+        android:layout_toRightOf="@id/shop_cart_icon"
+        android:textColor="@color/notice_color"
+        android:textSize="@dimen/text_size_middle" />
+
+    <TextView
+        android:id="@+id/shop_cart_pay"
+        android:layout_width="@dimen/my_top_height"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/divider_height"
+        android:background="@drawable/main_color_btn"
+        android:gravity="center"
+        android:onClick="buyClick"
+        android:text="@string/button_buy_now"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/shop_cart_add"
+        android:layout_width="@dimen/hundred"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/divider_height"
+        android:layout_toLeftOf="@id/shop_cart_pay"
+        android:background="@drawable/main_dark_color_btn"
+        android:gravity="center"
+        android:onClick="buyClick"
+        android:text="@string/button_add_cart"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

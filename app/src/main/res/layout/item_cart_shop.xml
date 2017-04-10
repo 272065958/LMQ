@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/shop_select_icon"
+        android:layout_width="@dimen/tab_height"
+        android:layout_height="@dimen/tab_height"
+        android:padding="@dimen/bigger_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/item_select_bg" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shop_select_icon"
+        layout="@layout/view_shop" />
+
+</RelativeLayout>

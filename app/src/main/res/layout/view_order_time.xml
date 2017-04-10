@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_pressed_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:onClick="timeSelect"
+    android:padding="@dimen/auto_margin">
+
+    <TextView
+        android:id="@+id/order_time_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:text="服务时间："
+        android:textSize="@dimen/text_size_middle" />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:src="@drawable/ic_enter" />
+
+</LinearLayout>

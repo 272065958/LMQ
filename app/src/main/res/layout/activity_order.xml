@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cjx_background_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@android:color/white">
+
+        <include layout="@layout/divider_view" />
+
+        <TextView
+            android:id="@+id/shop_cart_pay"
+            android:layout_width="@dimen/pay_btn_size"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/divider_height"
+            android:background="@drawable/main_color_btn"
+            android:gravity="center"
+            android:onClick="buyClick"
+            android:text="@string/button_submit_order"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_marginTop="@dimen/divider_height"
+            android:layout_toLeftOf="@id/shop_cart_pay"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cjx_text_main_color" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_button"
+        android:layout_below="@id/toolbar"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/cjx_divider_color"
+        android:dividerHeight="@dimen/divider_height"
+        android:fadingEdge="none"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/loading_view"
+        layout="@layout/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

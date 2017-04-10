@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cjx_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view" />
+
+    <TextView
+        android:id="@+id/bottom_button"
+        style="@style/button_bottom_style"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:text="@string/button_reservation"
+        android:onClick="submitClick" />
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_button"
+        android:layout_height="match_parent"/>
+
+    <include
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view" />
+</RelativeLayout>

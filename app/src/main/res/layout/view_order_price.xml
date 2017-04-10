@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:padding="@dimen/auto_margin">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:text="服务费用："
+        android:textSize="@dimen/text_size_middle" />
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/auto_margin"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:textSize="@dimen/text_size_middle" />
+
+</RelativeLayout>

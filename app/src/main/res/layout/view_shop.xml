@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:padding="@dimen/auto_margin">
+
+    <ImageView
+        android:id="@+id/shop_detail_photo"
+        android:layout_width="@dimen/image_size"
+        android:layout_height="@dimen/image_size"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shop_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="@dimen/text_size_middle"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:textColor="@color/cjx_text_main_color"/>
+
+        <include
+            android:id="@+id/shop_count_edit_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/item_shop_count_edit"
+            android:layout_below="@id/shop_detail_title"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/shop_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/notice_color"
+            android:textSize="@dimen/text_size_small"
+            android:layout_alignBottom="@id/shop_count_edit_view"/>
+    </RelativeLayout>
+</LinearLayout>

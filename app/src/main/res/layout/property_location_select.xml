@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/item_pressed_bg"
+    android:orientation="horizontal"
+    android:onClick="propertySelect"
+    android:padding="@dimen/auto_margin">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:layout_marginRight="@dimen/auto_margin"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/property_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_middle"
+            android:text="添加收货地址"
+            android:textColor="@color/cjx_text_deep_color" />
+
+        <TextView
+            android:id="@+id/property_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/property_name"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:textSize="@dimen/text_size_middle"
+            android:visibility="gone"
+            android:textColor="@color/cjx_text_deep_color" />
+
+        <TextView
+            android:id="@+id/property_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:layout_below="@id/property_name"
+            android:text="嘉信城市花园1期2座3E"
+            android:visibility="invisible"
+            android:textSize="@dimen/text_size_middle"
+            android:textColor="@color/cjx_text_deep_color" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:src="@drawable/ic_enter" />
+
+</LinearLayout>

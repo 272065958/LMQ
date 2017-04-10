@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cjx_background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="@dimen/auto_margin">
+
+        <ImageView
+            android:id="@+id/omengo_logo"
+            android:layout_width="@dimen/tab_height"
+            android:layout_height="@dimen/tab_height"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:layout_toRightOf="@id/omengo_logo">
+
+            <TextView
+                android:id="@+id/pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$:300"
+                android:textColor="@color/cjx_text_deep_color"
+                android:textSize="@dimen/text_size_middle" />
+
+            <TextView
+                android:id="@+id/pay_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pay_price"
+                android:text="邻檬圈 日常清洁"
+                android:textColor="@color/cjx_text_main_color"
+                android:textSize="@dimen/text_size_middle" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/auto_margin"
+        android:background="@android:color/white"
+        android:padding="@dimen/auto_margin"
+        android:text="支付方式"
+        android:textColor="@color/cjx_text_deep_color"
+        android:textSize="@dimen/text_size_middle" />
+
+    <include layout="@layout/divider_view" />
+
+    <RelativeLayout
+        android:id="@+id/pay_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_pressed_bg"
+        android:onClick="onClick"
+        android:padding="@dimen/auto_margin">
+
+        <ImageView
+            android:id="@+id/weixin_logo"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:src="@drawable/weixin_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:layout_toRightOf="@id/weixin_logo"
+            android:text="微信支付"
+            android:textColor="@color/cjx_text_main_color" />
+
+        <ImageView
+            android:layout_width="@dimen/fab_margin"
+            android:layout_height="@dimen/fab_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@drawable/item_select_bg" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_view" />
+
+    <RelativeLayout
+        android:id="@+id/pay_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_pressed_bg"
+        android:onClick="onClick"
+        android:padding="@dimen/auto_margin">
+
+        <ImageView
+            android:id="@+id/alipay_logo"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:src="@drawable/alipay_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:layout_toRightOf="@id/alipay_logo"
+            android:text="支付宝支付"
+            android:textColor="@color/cjx_text_main_color" />
+
+        <ImageView
+            android:layout_width="@dimen/fab_margin"
+            android:layout_height="@dimen/fab_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:src="@drawable/item_select_bg" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider_view" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/pay_button"
+        style="@style/button_bottom_style"
+        android:layout_marginTop="@dimen/tab_height"
+        android:onClick="onClick"
+        android:text="确认结算" />
+</LinearLayout>

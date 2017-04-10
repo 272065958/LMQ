@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cjx_background_color">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_view" />
+
+    <TextView
+        android:id="@+id/bottom_button"
+        style="@style/button_bottom_style"
+        android:text="@string/button_sure"
+        android:layout_alignParentBottom="true"
+        android:onClick="submitClick" />
+
+    <ScrollView
+        android:id="@+id/order_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_button"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/auto_margin"
+            android:paddingTop="@dimen/auto_margin">
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/auto_margin"
+                layout="@layout/property_location_select" />
+
+            <include layout="@layout/divider_view" />
+
+            <ViewStub
+                android:id="@+id/order_count_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/view_order_count"/>
+
+            <ViewStub
+                android:id="@+id/order_area_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/divider_height"
+                android:layout="@layout/view_order_area"/>
+
+            <ViewStub
+                android:id="@+id/order_price_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/divider_height"
+                android:layout="@layout/view_order_price"/>
+
+            <ViewStub
+                android:id="@+id/order_coupon_viewstub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/divider_height"
+                android:layout="@layout/view_order_coupon"/>
+
+            <include layout="@layout/divider_view" />
+
+            <EditText
+                android:id="@+id/order_remark"
+                style="@style/content_area_style"
+                android:background="@android:color/white"
+                android:hint="请填写要补充的内容"
+                android:paddingBottom="@dimen/auto_margin"
+                android:paddingLeft="@dimen/icon_size"
+                android:paddingRight="@dimen/icon_size"
+                android:paddingTop="@dimen/auto_margin" />
+
+            <include layout="@layout/divider_view" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/auto_margin"
+                android:textColor="@color/cjx_text_secondary_color"
+                android:text="购买须知："/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/auto_margin"
+                android:paddingRight="@dimen/auto_margin"
+                android:paddingBottom="@dimen/auto_margin"
+                android:textColor="@color/cjx_text_secondary_color"
+                android:textSize="@dimen/text_size_small"
+                android:text="@string/order_tip"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/loading_view" />
+</RelativeLayout>

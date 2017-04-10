@@ -20,7 +20,7 @@ public class FindPasswordActivity extends BaseGetCodeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_find_password);
-        setToolBar(true, null, getIntent().getAction());
+        setToolBar(R.drawable.back_icon, null, getIntent().getAction());
         type = "reset";
         findViewById();
     }

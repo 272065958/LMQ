@@ -35,4 +35,14 @@
         <item name="android:layout_margin">@dimen/auto_margin</item>
         <item name="android:onClick">submitClick</item>
     </style>
+
+    <style name="content_area_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">3</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textColor">@color/cjx_text_main_color</item>
+        <item name="android:textSize">@dimen/text_size_middle</item>
+        <item name="android:textColorHint">@color/cjx_text_secondary_color</item>
+    </style>
 </resources>

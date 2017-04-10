@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/select_frame_bg"
+    android:paddingBottom="@dimen/text_margin"
+    android:paddingTop="@dimen/text_margin">
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="半年套餐/24次"
+        android:textColor="@color/cjx_text_main_color"
+        android:textSize="@dimen/text_size_small" />
+</FrameLayout>

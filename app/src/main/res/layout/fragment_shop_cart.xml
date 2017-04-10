@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include
+        layout="@layout/toolbar_view" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider_height"
+            android:background="@color/cjx_divider_color" />
+
+        <LinearLayout
+            android:id="@+id/shop_cart_select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/item_height"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/divider_height"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/auto_margin">
+
+            <ImageView
+                android:layout_width="@dimen/tab_height"
+                android:layout_height="@dimen/tab_height"
+                android:padding="@dimen/bigger_margin"
+                android:src="@drawable/item_select_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shop_cart_pay"
+            android:layout_width="@dimen/hundred"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_color_btn"
+            android:textColor="@android:color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/divider_height"
+            android:gravity="center"
+            android:text="确认支付"/>
+
+        <TextView
+            android:id="@+id/shop_cart_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/divider_height"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/auto_margin"
+            android:layout_toRightOf="@id/shop_cart_select_all"
+            android:textColor="@color/notice_color" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/item_refresh_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom_content" />
+</RelativeLayout>

@@ -24,4 +24,57 @@
     <string name="button_register">注册</string>
     <string name="button_login">登录</string>
     <string name="button_get_code">获取验证码</string>
+
+    <string name="main_server">小区服务</string>
+    <string name="main_shop">购物车</string>
+    <string name="main_myself">个人中心</string>
+
+    <string name="myself_balance_title">物业余额</string>
+    <string name="myself_balance">物业余额（元）</string>
+    <string name="myself_order">我的订单</string>
+    <string name="myself_coupon">优惠券</string>
+    <string name="myself_info">个人资料</string>
+    <string name="myself_head">头像</string>
+    <string name="myself_name">昵称</string>
+    <string name="myself_change_pwd">修改密码</string>
+    <string name="myself_feedback">意见反馈</string>
+    <string name="myself_server">联系客服</string>
+    <string name="myself_logout">退出登录</string>
+    <string name="myself_login">点我登录</string>
+
+    <string name="price_format">￥%s</string>
+    <string name="cart_shop_price_format">总价：￥%s</string>
+
+    <string name="shop_pay">订单支付</string>
+    <string name="receive_remart_hint">请填写要补充的内容</string>
+    <string name="order_select_coupon">选择优惠券</string>
+    <string name="coupon_valid_time_format">有效期：%s</string>
+    <string name="order_no_coupon">无可用优惠券</string>
+    <string name="receive_address_null_hint">请选择服务地址</string>
+    <string name="order_pay_price_format">实付款：%s</string>
+
+    <string name="server_address">服务地址</string>
+    <string name="receive_address">收货地址</string>
+    <string name="receive_address_project">地址：</string>
+    <string name="receive_address_project_hint">请选择楼盘</string>
+    <string name="receive_address_name">联系人：</string>
+    <string name="receive_address_name_hint">请输入联系人姓名</string>
+    <string name="receive_address_position">位置</string>
+    <string name="receive_address_title">选择地址</string>
+    <string name="receive_address_auto">设为默认</string>
+    <string name="receive_address_add">新增地址</string>
+
+    <string name="product_pay_title">订单支付</string>
+    <string name="order_water_hint">如果家里没有对应品牌空桶或需要水泵请一并购买</string>
+    <string name="order_tip">1.订单提交后，两个工作日内我们会有相关工作人员主动联系您，请耐心等待\n2.更多咨询，可联系客服 400-930-2220</string>
+    <string name="order_count">选择购买数量</string>
+    <string name="order_area_format">%1$s平方</string>
+    <string name="order_price_format">%1$s元</string>
+
+    <string name="button_submit_order">提交订单</string>
+    <string name="button_update">编辑</string>
+    <string name="button_delete">删除</string>
+    <string name="button_reservation">立即预约</string>
+    <string name="button_add_cart">加入购物车</string>
+    <string name="button_buy_now">立即购买</string>
 </resources>

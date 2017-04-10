@@ -22,8 +22,13 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'SERVER_API_URI', '"http://www.omengo.com/api/"'
+        }
+        debug {
+            buildConfigField 'String', 'SERVER_API_URI', '"http://www.omengo.com/api/"'
         }
     }
 }
@@ -31,4 +36,7 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':cjx')
+    compile files('libs/alipaySdk-20161129.jar')
+    compile files('libs/Baidu_Mtj_3.7.5.4.jar')
+    compile files('libs/libammsdk.jar')
 }

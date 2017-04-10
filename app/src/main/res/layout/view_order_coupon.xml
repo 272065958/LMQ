@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_coupon_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_pressed_bg"
+    android:gravity="center_vertical"
+    android:onClick="couponSelect"
+    android:padding="@dimen/auto_margin"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:text="@string/myself_coupon"
+        android:gravity="center_vertical"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:textSize="@dimen/text_size_middle" />
+
+    <TextView
+        android:id="@+id/coupon_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:hint="@string/order_select_coupon"
+        android:textColor="@color/cjx_text_main_color"
+        android:textColorHint="@color/cjx_text_secondary_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/auto_margin"
+        android:src="@drawable/ic_enter" />
+</LinearLayout>

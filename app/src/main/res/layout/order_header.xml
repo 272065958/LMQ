@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/auto_margin">
+
+    <include layout="@layout/property_location_select" />
+
+    <include layout="@layout/divider_view" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/auto_margin"
+        layout="@layout/divider_view" />
+
+    <include
+        layout="@layout/view_order_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/divider_view" />
+
+    <include
+        layout="@layout/view_order_coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/divider_view" />
+
+    <EditText
+        android:id="@+id/order_remark"
+        style="@style/content_area_style"
+        android:background="@android:color/white"
+        android:hint="@string/receive_remart_hint"
+        android:paddingBottom="@dimen/auto_margin"
+        android:paddingLeft="@dimen/fab_margin"
+        android:paddingRight="@dimen/fab_margin"
+        android:paddingTop="@dimen/auto_margin" />
+    <include layout="@layout/divider_view" />
+</LinearLayout>
