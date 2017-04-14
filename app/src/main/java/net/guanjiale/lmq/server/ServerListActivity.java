@@ -32,7 +32,7 @@ public class ServerListActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_server_list);
-        setToolBar(R.drawable.back_icon, null, getIntent().getAction());
+        setToolBar(true, null, getIntent().getAction());
         loadData();
     }
 

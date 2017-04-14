@@ -1,4 +1,4 @@
-package net.guanjiale.lmq.server;
+package net.guanjiale.lmq.base;
 
 import android.content.Intent;
 import android.view.View;
@@ -12,6 +12,7 @@ import com.model.cjx.http.MyCallbackInterface;
 import net.guanjiale.lmq.R;
 import net.guanjiale.lmq.activity.OrderActivity;
 import net.guanjiale.lmq.bean.BaseProductBean;
+import net.guanjiale.lmq.server.ShopCartActivity;
 
 import java.util.ArrayList;
 
@@ -20,7 +21,7 @@ import java.util.ArrayList;
  */
 public abstract class GoodBuyActivity extends BaseActivity {
     int cartCount = 0;
-    String allPrice = "0";
+    public String allPrice = "0";
     TextView countView, priceView;
 
     protected void findViewById(){

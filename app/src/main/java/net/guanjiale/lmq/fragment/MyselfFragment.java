@@ -21,6 +21,9 @@ import net.guanjiale.lmq.R;
 import net.guanjiale.lmq.activity.FindPasswordActivity;
 import net.guanjiale.lmq.activity.LoginActivity;
 import net.guanjiale.lmq.bean.UserBean;
+import net.guanjiale.lmq.my.MyCouponActivity;
+import net.guanjiale.lmq.my.MyOrderActivity;
+import net.guanjiale.lmq.my.UserInfoActivity;
 
 /**
  * Created by cjx on 2016/8/22.
@@ -107,18 +110,18 @@ public class MyselfFragment extends BaseFragment {
 //                startActivity(balanceIntent);
                 Toast.makeText(getActivity(), "功能开放中...", Toast.LENGTH_SHORT).show();
                 break;
-//            case R.id.user_order: // 订单
-//                Intent orderIntent = new Intent(activity, MyOrderActivity.class);
-//                startActivity(orderIntent);
-//                break;
-//            case R.id.user_coupon: // 优惠券
-//                Intent couponIntent = new Intent(activity, MyCouponActivity.class);
-//                startActivity(couponIntent);
-//                break;
-//            case R.id.myself_info: // 个人资料
-//                Intent infoIntent = new Intent(activity, UserInfoActivity.class);
-//                startActivity(infoIntent);
-//                break;
+            case R.id.user_order: // 订单
+                Intent orderIntent = new Intent(activity, MyOrderActivity.class);
+                startActivity(orderIntent);
+                break;
+            case R.id.user_coupon: // 优惠券
+                Intent couponIntent = new Intent(activity, MyCouponActivity.class);
+                startActivity(couponIntent);
+                break;
+            case R.id.myself_info: // 个人资料
+                Intent infoIntent = new Intent(activity, UserInfoActivity.class);
+                startActivity(infoIntent);
+                break;
             case R.id.myself_change_pwd: // 修改密码
                 Intent pwdIntent = new Intent(activity, FindPasswordActivity.class);
                 pwdIntent.setAction(getString(R.string.myself_change_pwd));

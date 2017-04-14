@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/item_pressed_bg"
+    android:padding="@dimen/auto_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-03-15"
+            android:textColor="@color/cjx_text_main_color" />
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/cjx_text_main_color" />
+    </RelativeLayout>
+
+    <include
+        layout="@layout/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:layout_marginTop="@dimen/text_margin" />
+
+    <include
+        android:id="@+id/order_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        layout="@layout/item_order_detail_item" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_pay_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="实付款："
+            android:textColor="@color/cjx_text_deep_color" />
+
+        <TextView
+            android:id="@+id/order_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/order_pay_tip"
+            android:textColor="@color/notice_color" />
+
+        <TextView
+            android:id="@+id/order_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black_frame_bg"
+            android:paddingBottom="@dimen/text_margin"
+            android:paddingLeft="@dimen/icon_size"
+            android:paddingRight="@dimen/icon_size"
+            android:paddingTop="@dimen/text_margin"
+            android:textColor="@color/cjx_text_deep_color" />
+
+        <TextView
+            android:id="@+id/order_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/auto_margin"
+            android:layout_toLeftOf="@id/order_button_1"
+            android:background="@drawable/black_frame_bg"
+            android:paddingBottom="@dimen/text_margin"
+            android:paddingLeft="@dimen/icon_size"
+            android:paddingRight="@dimen/icon_size"
+            android:paddingTop="@dimen/text_margin"
+            android:textColor="@color/cjx_text_deep_color"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

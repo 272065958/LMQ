@@ -65,7 +65,7 @@ public class ServerOrderActivity extends BaseActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         Intent intent = getIntent();
         setContentView(R.layout.activity_server_order);
-        setToolBar(R.drawable.back_icon, null, intent.getAction());
+        setToolBar(true, null, intent.getAction());
         loadData(intent.getStringExtra("key"));
         registerReceiver(new IntentFilter(CustomApplication.ACTION_ORDER_CREATE));
     }

@@ -34,7 +34,7 @@ public class ServerDetailActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_server_detail);
         Intent intent = getIntent();
-        setToolBar(R.drawable.back_icon, null, intent.getAction());
+        setToolBar(true, null, intent.getAction());
 
         loadData(intent.getStringExtra("type"), intent.getStringExtra("key"));
         registerReceiver(new IntentFilter(CustomApplication.ACTION_ORDER_CREATE));

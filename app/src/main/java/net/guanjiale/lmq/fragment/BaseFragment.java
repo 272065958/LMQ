@@ -7,6 +7,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.model.cjx.MyApplication;
+
 import net.guanjiale.lmq.R;
 
 /**
@@ -55,9 +57,10 @@ public class BaseFragment extends Fragment {
             return ;
         }
         toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        toolbar.setBackgroundResource(MyApplication.getInstance().getToolbarBg());
         if (toolbar != null) {
             if (hasBack) {
-                toolbar.setNavigationIcon(R.drawable.back_icon);
+                toolbar.setNavigationIcon(MyApplication.getInstance().getBackRes());
                 activity.setSupportActionBar(toolbar);
                 if (backListener == null) {
                     toolbar.setNavigationOnClickListener(new View.OnClickListener() {

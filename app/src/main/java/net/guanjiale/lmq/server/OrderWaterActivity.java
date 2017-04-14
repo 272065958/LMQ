@@ -17,6 +17,7 @@ import com.model.cjx.util.Tools;
 
 import net.guanjiale.lmq.CustomApplication;
 import net.guanjiale.lmq.R;
+import net.guanjiale.lmq.base.GoodBuyActivity;
 import net.guanjiale.lmq.bean.BaseProductBean;
 import net.guanjiale.lmq.bean.ServerProductBean;
 
@@ -43,7 +44,7 @@ public class OrderWaterActivity extends GoodBuyActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order_water);
-        setToolBar(R.drawable.back_icon, null, getIntent().getAction());
+        setToolBar(true, null, getIntent().getAction());
 
         loadData(getIntent().getStringExtra("key"));
         registerReceiver(new IntentFilter(CustomApplication.ACTION_ORDER_CREATE));

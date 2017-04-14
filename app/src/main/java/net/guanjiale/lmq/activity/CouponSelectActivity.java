@@ -24,7 +24,7 @@ public class CouponSelectActivity extends BaseListActivity implements AdapterVie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setToolBar(R.drawable.back_icon, null, R.string.order_select_coupon);
+        setToolBar(true, null, R.string.order_select_coupon);
     }
 
     @Override

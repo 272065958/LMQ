@@ -26,7 +26,7 @@ public class RegisterActivity extends BaseGetCodeActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        setToolBar(R.drawable.back_icon, null, R.string.button_register);
+        setToolBar(true, null, R.string.button_register);
         type = "register";
         findViewById();
     }

@@ -46,7 +46,7 @@ public class ShopListActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop_list);
         Intent intent = getIntent();
-        setToolBar(R.drawable.back_icon, null, intent.getAction());
+        setToolBar(true, null, intent.getAction());
         loadData();
         registerReceiver(new IntentFilter(CustomApplication.ACTION_CART_COUNT_UPDATE));
     }

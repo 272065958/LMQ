@@ -36,9 +36,9 @@ public class AddressSelectActivity extends BaseListActivity implements AdapterVi
     AddressAdapter adapter;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setToolBar(R.drawable.back_icon, null, R.string.server_address);
         app = (CustomApplication) MyApplication.getInstance();
+        super.onCreate(savedInstanceState);
+        setToolBar(true, null, R.string.server_address);
         setListViweDivider(ContextCompat.getDrawable(this, R.color.cjx_background_color),
                 getResources().getDimensionPixelOffset(R.dimen.auto_margin));
     }

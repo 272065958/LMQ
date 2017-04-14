@@ -71,7 +71,7 @@ public class PayActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
-        setToolBar(R.drawable.back_icon, null, R.string.product_pay_title);
+        setToolBar(true, null, R.string.product_pay_title);
         initView();
     }
 

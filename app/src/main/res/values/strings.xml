@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">LMQ</string>
+    <string name="upload_cancel">已取消上传</string>
 
     <string name="register_now">立即注册</string>
     <string name="forget_password">忘记密码</string>
@@ -70,6 +71,25 @@
     <string name="order_count">选择购买数量</string>
     <string name="order_area_format">%1$s平方</string>
     <string name="order_price_format">%1$s元</string>
+    <string name="order_detail_num">订单号：</string>
+    <string name="order_detail_address">配送地点：</string>
+    <string name="shop_pay_detail">订单详情</string>
+    <string name="order_detail_type">配送方式：</string>
+    <string name="order_detail_time">服务时间：</string>
+    <string name="order_detail_pay">支付方式：</string>
+    <string name="order_detail_phone">联系电话：</string>
+    <string name="cancel_order_tip">是否取消当前订单?</string>
+    <string name="comfirm_order_tip">是否已收到商品?</string>
+    <string name="count_format_string">×%s</string>
+
+    <string name="coupon_no_use">未使用</string>
+    <string name="coupon_use">已使用</string>
+    <string name="coupon_outtime">已过期</string>
+
+    <string name="order_all">全部</string>
+    <string name="order_pay">待付款</string>
+    <string name="order_server">待服务</string>
+    <string name="order_finish">已完成</string>
 
     <string name="button_submit_order">提交订单</string>
     <string name="button_update">编辑</string>
@@ -77,4 +97,8 @@
     <string name="button_reservation">立即预约</string>
     <string name="button_add_cart">加入购物车</string>
     <string name="button_buy_now">立即购买</string>
+    <string name="button_order_cancel">取消订单</string>
+    <string name="button_order_pay">立即付款</string>
+    <string name="button_order_back">申请退款</string>
+    <string name="button_order_comfirm">确认收货</string>
 </resources>

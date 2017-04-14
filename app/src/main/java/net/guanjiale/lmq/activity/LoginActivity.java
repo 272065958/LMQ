@@ -32,7 +32,7 @@ public class LoginActivity extends BaseActivity {
 
         setContentView(R.layout.activity_login);
 
-        setToolBar(R.drawable.back_icon, null, R.string.button_login);
+        setToolBar(true, null, R.string.button_login);
 
         findViewById();
         sharedPreferences = getSharedPreferences(getString(R.string.cjx_preference), MODE_PRIVATE);
@@ -67,12 +67,12 @@ public class LoginActivity extends BaseActivity {
     public void onClick(View v) {
         final String phone = accView.getText().toString();
         if (TextUtils.isEmpty(phone)) {
-            Toast.makeText(this, getString(R.string.login_name_hint), Toast.LENGTH_SHORT).show();
+            showToast(getString(R.string.login_name_hint));
             return;
         }
         final String password = pwdView.getText().toString();
         if (TextUtils.isEmpty(password)) {
-            Toast.makeText(this, getString(R.string.register_password_hint), Toast.LENGTH_SHORT).show();
+            showToast(getString(R.string.register_password_hint));
             return;
         }
         showLoadDislog();

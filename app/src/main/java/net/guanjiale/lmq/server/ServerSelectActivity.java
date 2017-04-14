@@ -44,7 +44,7 @@ public class ServerSelectActivity extends BaseListActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setToolBar(R.drawable.back_icon, null, getIntent().getAction());
+        setToolBar(true, null, getIntent().getAction());
         setListViweDivider(ContextCompat.getDrawable(this, R.color.cjx_background_color),
                 getResources().getDimensionPixelOffset(R.dimen.auto_margin));
         loadData();

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="title_bg">#fdfdfd</color>
+
     <color name="colorPrimary">#FA615B</color>
     <color name="colorPrimaryDark">#FF2F36</color>
     <color name="colorAccent">#FF4081</color>

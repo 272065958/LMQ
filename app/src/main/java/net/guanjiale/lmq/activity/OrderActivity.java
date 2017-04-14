@@ -58,7 +58,7 @@ public class OrderActivity extends BaseActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
-        setToolBar(R.drawable.back_icon, null, R.string.shop_pay);
+        setToolBar(true, null, R.string.shop_pay);
 
         Intent intent = getIntent();
         products = (ArrayList<BaseProductBean>) intent.getSerializableExtra("product");

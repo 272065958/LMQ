@@ -33,7 +33,7 @@ public class AddressAddActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_address_add);
         Intent intent = getIntent();
-        setToolBar(R.drawable.back_icon, null, intent.getStringExtra("title"));
+        setToolBar(true, null, intent.getStringExtra("title"));
         app = (CustomApplication) MyApplication.getInstance();
         findViewById();
         action = intent.getAction();

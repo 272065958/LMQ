@@ -69,4 +69,14 @@ public class CustomApplication extends MyApplication {
     public boolean isLogin() {
         return user != null;
     }
+
+    @Override
+    public int getBackRes() {
+        return R.drawable.back_icon;
+    }
+
+    @Override
+    public int getToolbarBg(){
+        return R.drawable.toolbar_bg;
+    }
 }

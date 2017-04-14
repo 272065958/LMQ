@@ -5,4 +5,5 @@
     <dimen name="image_size">60dp</dimen>
     <dimen name="pay_btn_size">150dp</dimen>
     <dimen name="my_top_height">120dp</dimen>
+    <dimen name="content_size">80dp</dimen>
 </resources>
